@@ -1,0 +1,40 @@
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+* {
+  margin: 0;
+  padding: 0;
+box-sizing: border-box;}
+
+  .container {display: flex;
+  margin: 0 150px;}
+
+  header {align-content: space-around;
+  align-items: center;
+width:100%;
+  }
+
+  .d-flex {margin: 0 150px;}
+  .navbar-brand {margin: 0 150px;}
+  h2{margin: 0 150px;}
+
+  .tab{display: flex;
+justify-content: center;}
+
+.d-flex2 > a {margin: 0 30px;}
+
+.Copyrightⓒ2024 
+{display: flex;
+  margin: 0 150px;}
+
+  .main {padding: 0 20px;}
+
+  .card-body >a {background-color:transparent;
+  color: black;
+border: 1px solid black;
+margin: 2px;}
