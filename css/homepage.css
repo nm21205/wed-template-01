@@ -70,7 +70,6 @@ header > .container {
   border: 1px solid white;
   color: white;
   font-size: 25px;
-
 }
 
 .front {
@@ -127,44 +126,141 @@ header > .container {
   margin-top: 50px;
 }
 
-.phone > .lineGroup{
-  width:100%;
-  display:flex;
+.phone > .lineGroup {
+  width: 100%;
+  display: flex;
   align-items: center;
- 
 }
-.phone > .lineGroup > .line2 {margin-top: 80px;
+.phone > .lineGroup > .line2 {
+  margin-top: 80px;
   font-size: 25px;
-margin-left: 50px;
-}  
+  margin-left: 50px;
+}
 
 .exp2 {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
+  word-break: keep-all;
 }
 
+.exp2 > .logo {
+  text-align: center;
+  width: 525px;
 
-.exp2 > .logo {text-align: center;
-width: 525px;
-outline: 1px solid blue;
-text-align: center;
-justify-content:space-evenly;}
-.exp2 > .logo > ul {display: flex;
-
-outline: 1px solid red ;
-background-color:skyblue;
-align-content: center;
-align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+}
+.exp2 > .logo > ul {
+  display: flex;
+  background-color: skyblue;
+  align-content: center;
+  align-items: center;
 }
 
-.exp2 > .logo > ul {width:525px;
+.exp2 > .logo > ul {
+  width: 525px;
   height: 245px;
-margin: 1px;
-left: 30px;}
+  margin: 1px;
+  left: 30px;
+}
 
-.exp2 > .logo > ul > li {margin: 10px;}
+.exp2 > .logo > ul > li {
+  margin: 10px;
+}
 
-.exp2 > .logo > .picture {width: 600px;}
+.exp2 > .logo > .picture {
+  width: 600px;
+}
 
+.service {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  height: 100%;
+}
+
+.service > h1 {
+  padding: 60px;
+}
+
+.service > .bt {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 25px;
+}
+
+.service > .bt p {
+  word-break: keep-all;
+}
+
+.bt > li {
+  width: 400px;
+  margin-top: 20px;
+}
+
+.bt > li > a {
+  font-size: 70px;
+}
+
+.phone2 {
+  width: 1200px;
+  text-align: center;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.phone2 > .bu {
+  padding: 20px;
+  border: 1px solid white;
+}
+
+.phone2 > .bu > button {
+  background-color: orange;
+  border: #fff;
+  border-radius: 10px;
+  font-size: 25px;
+  color: white;
+  height: 50px;
+  width: 380px;
+}
+
+.charge {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.charge > h2 {padding: 30px;}
+
+.charge > .tag {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+padding: 40px;
+}
+
+.charge > .tag :nth-child(2){
+  margin-right: 400px;
+}
+
+
+
+form {width: 1200px;
+display: flex;
+justify-content:center;
+}
+
+
+table td {
+  width: 109px;}
+
+  .c-end {width: 1200px;
+  text-align: center;
+font-size: 25px;
+margin-top: 10px;
+background-color: antiquewhite;
+box-shadow:10px ,1px, 5px, 5px rgb(0, 0, 0,);}
