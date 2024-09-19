@@ -131,7 +131,7 @@ header > .container {
   width:100%;
   display:flex;
   align-items: center;
-  
+ 
 }
 .phone > .lineGroup > .line2 {margin-top: 80px;
   font-size: 25px;
@@ -142,13 +142,29 @@ margin-left: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 
 .exp2 > .logo {text-align: center;
-width: 500px;}
-.exp2 > .logo > ul {display: flex;}
+width: 525px;
+outline: 1px solid blue;
+text-align: center;
+justify-content:space-evenly;}
+.exp2 > .logo > ul {display: flex;
 
+outline: 1px solid red ;
+background-color:skyblue;
+align-content: center;
+align-items: center;
+}
 
+.exp2 > .logo > ul {width:525px;
+  height: 245px;
+margin: 1px;
+left: 30px;}
 
+.exp2 > .logo > ul > li {margin: 10px;}
+
+.exp2 > .logo > .picture {width: 600px;}
 
