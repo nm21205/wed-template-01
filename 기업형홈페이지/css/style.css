@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  }
+
+  header {width: 100%;
+  border-bottom: 1px solid #ddd;
+}
+header .inner {
+width:1180px;
+height: 120px;
+margin: 0 auto;
+position: relative;
+/*자식 absolute 요소의 기준점 설정*/
+}
+
+header .inner h1 {position: absolute;
+left: 0;
+bottom:15px;
+}
+header .inner h1 a {font:bold 24px/1 Arial;
+color:#444;}
+
+header .inner .util {position:absolute;
+top:20px;
+right: 30px;
+display: flex;
+gap:20px;
+}
+
+header .inner .util li a {font:12px/1 Arial;
+color:#999;}
+
+header .inner #gnb {position: absolute;
+bottom:20px;
+right: 30px;
+display: flex;
+gap:80px;
+
+}
+
+header .inner #gnb li a{ font:bold 15px/1 Arial;
+color:#555;
+transition: all .5s;
+}
+
+header .inner #gnb li a:hover {background-color: #555;
+color:#fff;
+}
+
+
+/*footer*/
+footer { width: 100%;
+background-color: #333;
+padding: 100px 0;
+border-top:1px solid #888;
+}
+
+footer .inner
