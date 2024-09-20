@@ -40,7 +40,7 @@
     </header>
     <div class="front">
       <div class="mainimages">
-        <img src="/홈페이지구현/img/maintruck.png" alt="" />
+        <img src="/img/maintruck.png" alt="" />
         <img src="" alt="" />
         <img src="" alt="" />
         <img src="" alt="" />
@@ -208,10 +208,10 @@
     <div class="charge">
       <h2>운송요금안내</h2>
       <div class="tag">
-        <b>운송거리별 요금표(전국권,시내운송)</b><b>단위: 만원(vat별도)</b>
+        <b>운송거리별 요금표(전국권,시내운송)</b><b>단위: 만원(VAT별도)</b>
       </div>
       <form>
-        <table border=1  frame=below rules=rows>
+        <table border="1" frame="below" rules="rows">
           <tr>
             <td>차량종류</td>
             <td>0.5톤</td>
@@ -367,13 +367,18 @@
     </div>
     <!--charge-->
     <div class="phone3">
-      <div><p>고객센터</p></div>
-      <div><b>전국어디서나 1533-9943</b><b>기타문의</b></div>
-      <div>
-        <ul>
-          <li>고객센터 바로전화1533-9943</li>
-          <li>담당소장 직통010-4417-8224</li>
-        </ul>
+      <div class="container3">
+        <div><p>고객센터</p></div>
+        <div class="jon"><b>전국어디서나 1533-9943</b><b>기타문의</b></div>
+        <div class="bu2">
+          <button>
+            <i class="fa-solid fa-phone"></i>고객센터 바로전화1533-9943
+          </button>
+
+          <button>
+            <i class="fa-solid fa-phone"></i>담당소장 직통 010-4417-8224
+          </button>
+        </div>
       </div>
     </div>
     <!--phone3-->
@@ -381,26 +386,76 @@
       <div>
         <h2>화물차량안내</h2>
       </div>
-      <div class="pic">
-        <ul>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
+      <div class="pict">
+        <ul class="pict2">
+          <li>
+            <a href="#"><img src="/기업형홈페이지/img/dams.jpg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="/기업형홈페이지/img/1ton.jpg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="/기업형홈페이지/img/2.5ton.jpg" alt="" /></a>
+          </li>
         </ul>
       </div>
-      <!--pic-->
+      <!--pict-->
     </div>
     <!--info-->
     <div class="mail">
       <div>
-        <h12>온라인 견적문의</h12>
+        <h2>온라인 견적문의</h2>
       </div>
-      <div class="mwssage">
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+      <div class="message">
+        <ul class="inquiry">
+          <li class="notice">
+            <p>성함</p>
+            <input
+              class="name"
+              type="name"
+              placeholder="담당자 성함을 입력해 주세요"
+            />
+            <p>전화번호</p>
+            <input
+              class="number"
+              type="phone"
+              placeholder="전화번호를 입력해주세요"
+            />
+            <p>문의사항</p>
+            <input
+              class="matter"
+              type="matter"
+              placeholder="거리,수량 등 문의 사항을 입력해주세요"
+            />
+            <div class="send">
+              <button>문의사항 보내기
+                <i class="fa-solid fa-message" style="color: #ffffff"></i
+                >
+              </button>
+            </div>
+            <!--send-->
+          </li>
+          <li>
+            <a href="#"><img src="/img/asian.jpg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="/img/west.jpg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa-regular fa-building" style="color: #ff0000"></i
+            ></a>
+            <p>경기도 안산시 00대로 00번길</p>
+            <a href="#"
+              ><i class="fa-regular fa-building" style="color: #ff0000"></i
+            ></a>
+            <p>kkkkkkkkk11@naver.com</p>
+            <a href="#"
+              ><i class="fa-regular fa-building" style="color: #ff0000"></i
+            ></a>
+            <h4>tel. 1533-0000</h4>
+            <p>상담시간 6 AM - 10 PM</p>
+          </li>
         </ul>
       </div>
     </div>

@@ -233,34 +233,171 @@ header > .container {
   text-align: center;
 }
 
-.charge > h2 {padding: 30px;}
+.charge > h2 {
+  padding: 30px;
+  font-size: 40px;
+}
 
 .charge > .tag {
   width: 1200px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-padding: 40px;
+  padding: 40px;
+  font-size: 18px;
 }
 
-.charge > .tag :nth-child(2){
+.charge > .tag :nth-child(2) {
   margin-right: 400px;
 }
 
-
-
-form {width: 1200px;
-display: flex;
-justify-content:center;
+form {
+  width: 1200px;
+  display: flex;
+  justify-content: center;
 }
 
-
 table td {
-  width: 109px;}
+  width: 109px;
+}
 
-  .c-end {width: 1200px;
+.c-end {
+  width: 1200px;
   text-align: center;
-font-size: 25px;
-margin-top: 10px;
-background-color: antiquewhite;
-box-shadow:10px ,1px, 5px, 5px rgb(0, 0, 0,);}
+  font-size: 25px;
+  margin-top: 10px;
+  background: linear-gradient(180deg, white, gold);
+  height: 40px;
+}
+
+.c-end > a {
+  border-bottom: 2px solid black;
+}
+
+.phone3 {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  background: linear-gradient(180deg, white 1%, darkblue);
+  height: 300px;
+  position: relative;
+}
+
+.phone3 > .container3 > div > p {
+  color: red;
+}
+
+.phone3 > .container3 {
+  position: absolute;
+  top: 50px;
+  left: 220px;
+}
+
+.container3 > .jon {
+  line-height: 100px;
+  font-size: 40px;
+  color: #fff;
+}
+
+.phone3 > .container3 > .bu2 > button {
+  background-color: orange;
+  border: #fff;
+  border-radius: 10px;
+  font-size: 25px;
+  color: white;
+  height: 50px;
+  width: 380px;
+}
+
+.phone3 > .bu2 > :nth-child(1) {
+  background-color: gold;
+}
+
+.info {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  height: 800px;
+  background-color: #000;
+}
+
+.info > div > h2 {
+  display: block;
+  margin: 50px;
+  margin-top: 100px;
+}
+
+.info > .pict > .pict2 {
+  width: 1200px;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+}
+
+.info > .pict > .pict2 > li {
+  width: 300px;
+  height: 300px;
+  outline: 1px solid red;
+  margin: 40px;
+}
+
+.info > .pict > .pict2 > li > a > img {
+  width: 300px;
+  height: 300px;
+}
+
+.mail {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.mail > div > h2 {
+  margin: 200px;
+  text-align: center;
+  border: 1px solid red;
+  font-size: 40px;
+}
+
+.mail > .message > .inquiry {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mail > .message > .inquiry > li {
+  width: 600px;
+  border: 1px solid red;
+}
+
+.mail > .message > .inquiry > li > a > img {
+  width: 600px;
+}
+
+.notice {
+  padding-top: 40px;
+  text-align: start;
+  background-color: rgb(166, 220, 241);
+}
+.notice > input {
+  width: 600px;
+  text-indent:1%;
+  height: 40px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.notice > .matter {height: 200px;
+text-align: start;
+justify-content: start;
+align-items: start;
+}
+
+.notice > .send > button {display: block;
+height: 50px;
+width: 600px;
+background-color: orange;
+border-radius: 5px;
+border:none}
