@@ -319,8 +319,8 @@ table td {
   width: 1200px;
   margin: 0 auto;
   text-align: center;
-  height: 800px;
-  background-color: #000;
+  height: 500px;
+
 }
 
 .info > div > h2 {
@@ -339,7 +339,7 @@ table td {
 .info > .pict > .pict2 > li {
   width: 300px;
   height: 300px;
-  outline: 1px solid red;
+  outline: 1px solid black;
   margin: 40px;
 }
 
@@ -352,12 +352,13 @@ table td {
   width: 1200px;
   margin: 0 auto;
   text-align: center;
+  height: 1140px;
+  box-sizing: border-box;
 }
 
 .mail > div > h2 {
   margin: 200px;
   text-align: center;
-  border: 1px solid red;
   font-size: 40px;
 }
 
@@ -368,17 +369,19 @@ table td {
 
 .mail > .message > .inquiry > li {
   width: 600px;
-  border: 1px solid red;
 }
 
 .mail > .message > .inquiry > li > a > img {
   width: 600px;
+
+  
 }
 
 .notice {
   padding-top: 40px;
   text-align: start;
   background-color: rgb(166, 220, 241);
+  box-sizing: border-box;
 }
 .notice > input {
   width: 600px;
@@ -393,6 +396,8 @@ table td {
 text-align: start;
 justify-content: start;
 align-items: start;
+width:600px;
+padding-top:10px ;
 }
 
 .notice > .send > button {display: block;
@@ -401,3 +406,44 @@ width: 600px;
 background-color: orange;
 border-radius: 5px;
 border:none}
+
+.inquiry > .maillexp {
+  background-color:rgb(166, 220, 241);
+  text-align: center;
+  align-content: center;
+  box-sizing: border-box;
+}
+
+
+.inquiry > .maillexp > div {
+  margin-top:50px;
+padding: 0px;
+font-size: 20px;
+}
+
+footer {margin:0 auto;
+padding: 0;
+text-align: center;
+color: #fff;
+background-color: #000;
+font-size: 40px;
+align-content: center;
+height: 400px;}
+
+footer > i {font-size: 60px;
+
+margin: 30px;}
+
+footer > div {
+  font-size: 30px;
+
+color: rgba(146, 137, 137, 0.911);
+margin-top : 50px;}
+
+/*미디어쿼리*/
+
+@media screen {
+  
+}
+
+
