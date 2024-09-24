@@ -13,6 +13,7 @@
   <body>
     <header>
       <div class="container">
+        <div class="toglebtn"><a href="#" class="togglebtn"><i class="fas fa-bars"></i></a></div>
         <div class="logo">
           <a href="#"
             ><i class="fa-solid fa-truck" style="color: #ffffff"></i
@@ -480,5 +481,18 @@
       ><b>담당소장:김명의</b><b>화물운송사업허가증:관허 제 주선 1999-03-06호</b>
     </div>
     </footer>
+    <script>
+      //선택자
+      const togglebtn = document.querySelector(".togglebtn");
+      const menu = document.querySelector(".menu");
+      const icon = document.querySelector(".icon");
+  
+      //toggleBtn에 클릭이벤트 추가
+      togglebtn.addEventListener("click",() => {
+        //gnb와 icon에 active클래스가 있으면 active클래스를 제거하고 없으면 추가
+        menu.classList.toggle("active");
+        icon.classList.toggle("active");
+      })
+    </script>
   </body>
 </html>
