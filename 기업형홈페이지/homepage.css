@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 ul,
 li {
@@ -10,6 +11,7 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
 
 .menu_pic {
   background-image: url("./img/int4.png");
@@ -27,14 +29,13 @@ a {
   justify-content:space-between
 }
 .title_menu > .logo {
-  margin-left: 50px;
+  margin-left: 100px;
 }
 .title_menu > .logo > div > i {
   font-size: 80px;
 
 }
-.title_menu > .mode {
-}
+
 
 .title_menu > .mode > ul {
   display: flex;
@@ -48,7 +49,7 @@ a {
 
 .title_menu > .toggleline {
   font-size: 80px;
-  margin-right: 50px;
+  margin-right: 100px;
 }
 
 .t_intro {
@@ -79,6 +80,111 @@ a {
 }
 
 
-.intro > div > .int {
+.intro > .int {
   display: flex;
+}
+.intro > .int > .inin {
+  margin-top: 80px;
+  font-size: 25px;
+}
+
+.inin > :nth-child(1) {
+  color:blueviolet;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.intro > .int > section  > button {
+  display: inline-block;
+  margin-top : 110px;
+  margin-left : 50px;
+  font-size: 25px;
+  width: 175px;
+  height: 50px;
+  background-color: aliceblue;
+  border: 1px solid black;
+}
+
+.tro {
+  display: flex;
+  text-align: center;
+  margin-top: 100px;
+  font-size: 30PX;
+  font-weight: bold;
+}
+.tro > .in > li {
+  margin-bottom: 70px;
+}
+.tro > .in2 > li > img{
+   height: 284px;
+}
+
+.tro > .in2 > li {
+  margin-bottom: 70px;
+}
+
+
+.tro > div > .line {
+  height: 100%;
+  width: 100%;
+  border-left: 1px solid black;
+  margin-left: 90px;
+  margin-right: 90px;
+}
+
+.intro2 {
+  background: url(./img/scientist-examining-sample-stockcake\ 1.png);
+  background-repeat: no-repeat;
+  
+  text-align: center;
+
+  height: 2600px;
+  width: 100%;
+margin-top: 400px;
+background-position: center;
+}
+
+.intro2 > :nth-child(1){
+  margin-top: 500px;
+  display: flex;
+  justify-content: center;
+}
+.intro2 >div > .head {
+  margin-top: 800px;
+}
+
+
+.intro2 >div > .head > h1 {
+  color: blueviolet; 
+  list-style: none;
+}
+
+ .intro2 >div > .head > p {
+  font-size: 32px;
+  color: aliceblue;
+  margin : 40px 0px;
+}
+
+.intro2 >div > .cards {
+  margin-top: 300px;
+}
+
+.intro2 >div > .cards2 {
+  margin-top: 500px;
+}
+
+.intro2 >div > .cards > .card {
+  justify-content: flex-start;
+  text-align: start;
+  margin: 200px 30px;
+}
+
+.intro2 >div > .cards > .card > :nth-child(1)
+{
+  display: flex;
+  justify-content: space-between;
+}
+
+.intro2 >div > .cards > .card > p {
+  font-size: 30px;
 }
