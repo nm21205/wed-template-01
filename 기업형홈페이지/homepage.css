@@ -86,6 +86,7 @@ a {
 .intro > .int > .inin {
   margin-top: 80px;
   font-size: 25px;
+  font-weight: bold;
 }
 
 .inin > :nth-child(1) {
@@ -151,6 +152,7 @@ background-position: center;
 }
 .intro2 >div > .head {
   margin-top: 800px;
+  text-align: start;
 }
 
 
@@ -162,8 +164,23 @@ background-position: center;
  .intro2 >div > .head > p {
   font-size: 32px;
   color: aliceblue;
-  margin : 40px 0px;
+  margin : 20px 0px;
+  font-weight: bold;
 }
+
+.intro2 >div > .head > button 
+{ text-align: start;
+  padding: 5px;
+  margin-top : 5px;
+  font-size: 25px;
+  width: 100px;
+  height: 50px;
+  background-color: aliceblue;
+  border: 1px solid black;
+}
+
+
+
 
 .intro2 >div > .cards {
   margin-top: 300px;
@@ -179,12 +196,151 @@ background-position: center;
   margin: 200px 30px;
 }
 
+
+.intro2 >div > .cards > .card {
+  border-radius: 20px;
+  border: 1px solid transparent;
+  width: 310px;
+  height: 500px;
+  backdrop-filter: blur(30px);
+  text-align: start;
+}
+
+
+.intro2 >div > .cards > .card > li {
+  font-size: 20px;
+  margin-left: 20px;
+  margin-bottom: 40px;
+}
+
 .intro2 >div > .cards > .card > :nth-child(1)
 {
   display: flex;
+ margin: 20px;
   justify-content: space-between;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 50px;
 }
 
-.intro2 >div > .cards > .card > p {
-  font-size: 30px;
+.intro2 >div > .cards > .card > :nth-child(2)
+{
+ font-size: 15px;
 }
+
+.intro2 >div > .cards > .card > :nth-child(5) > button
+{ background-color: transparent;
+  font-size: 20px;
+  border:none;
+}
+
+
+.intro2 >div > .cards2 > .card {
+  justify-content: flex-start;
+  text-align: start;
+  margin: 200px 30px;
+}
+
+
+.intro2 >div > .cards2 > .card {
+  border-radius: 20px;
+  border: 1px solid transparent;
+  width: 310px;
+  height: 500px;
+  backdrop-filter: blur(30px);
+  text-align: start;
+}
+
+
+.intro2 >div > .cards2 > .card > li {
+  font-size: 20px;
+  margin-left: 20px;
+  margin-bottom: 40px;
+}
+
+.intro2 >div > .cards2 > .card > :nth-child(1)
+{
+  display: flex;
+ margin: 20px;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.intro2 >div > .cards2 > .card > :nth-child(2)
+{
+ font-size: 15px;
+}
+
+.intro2 >div > .cards2 > .card > :nth-child(5) > button
+{ background-color: transparent;
+  font-size: 20px;
+  border:none;
+}
+
+
+
+.container > .main >  .product{
+  text-align: start;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.container > .main >  .product > div > p
+{ font-size: 25px;
+  color: blueviolet;
+  font-weight: bold;
+}
+
+
+
+.container > .main >  .product > button
+{ background-color: transparent;
+  font-size: 20px;
+  border:1px solid black;
+  margin-top: 70px;
+  margin-left: 50px;
+  height: 40px;
+  text-align: center;
+  width: 90px;
+}
+
+.p_lntro2 {
+  font-size: 50px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 120px;
+  height: 100%;
+  width: 100%;
+  background: url(./img/lake-6701636_1920\ 1\ \(1\).png);
+  background-image: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1128px;
+  backdrop-filter: blur(15px);
+}
+
+
+
+
+
+.p_lntro2 > ul {
+  width: 376px;
+  text-align: center;
+  align-content: center;
+  border: 1px solid black;
+  box-sizing: border-box;
+  font-size: 20px;
+  background;
+  margin: 0;
+  color: aliceblue;
+}
+
+
+
+
+
+
