@@ -12,6 +12,12 @@ a {
   color: inherit;
 }
 
+button {
+  cursor: pointer;
+}
+
+
+
 
 .menu_pic {
   background-image: url("./img/int4.png");
@@ -177,6 +183,7 @@ background-position: center;
   height: 50px;
   background-color: aliceblue;
   border: 1px solid black;
+  cursor: pointer;
 }
 
 
@@ -232,6 +239,7 @@ background-position: center;
 { background-color: transparent;
   font-size: 20px;
   border:none;
+  cursor: pointer;
 }
 
 
@@ -276,12 +284,28 @@ background-position: center;
 .intro2 >div > .cards2 > .card > :nth-child(5) > button
 { background-color: transparent;
   font-size: 20px;
-  border:none;
+  border:none; }
+
+  
+
+
+
+
+.intro2 >div > .cards2 > .card:hover {
+  background-color: rgba(138, 43, 226, 0.8); /* blueviolet 색상을 rgba로 변경 */
+  transition: background-color 0.4s; /* transition을 background-color에만 적용 */
 }
 
+.intro2 >div > .cards > .card:hover {
+  background-color: rgba(138, 43, 226, 0.8); /* blueviolet 색상을 rgba로 변경 */
+  transition: background-color 0.4s; /* transition을 background-color에만 적용 */
+}
+
+  
 
 
 .container > .main >  .product{
+  margin-top: 60px;
   text-align: start;
   display: flex;
   width: 100%;
@@ -289,7 +313,7 @@ background-position: center;
 }
 
 .container > .main >  .product > div > p
-{ font-size: 25px;
+{ font-size: 30px;
   color: blueviolet;
   font-weight: bold;
 }
@@ -300,12 +324,19 @@ background-position: center;
 { background-color: transparent;
   font-size: 20px;
   border:1px solid black;
-  margin-top: 70px;
+  margin-top: 80px;
   margin-left: 50px;
   height: 40px;
   text-align: center;
   width: 90px;
+  cursor: pointer;
 }
+
+
+.container > .main >  .product > button:hover {
+  border:3px, solid rgba(138, 43, 226, 0.8); /* blueviolet 색상을 rgba로 변경 */
+} 
+
 
 .p_lntro2 {
   font-size: 50px;
@@ -313,7 +344,7 @@ background-position: center;
   text-align: center;
   justify-content: center;
   margin-top: 120px;
-  height: 100%;
+  height: 520px;
   width: 100%;
   background: url(./img/lake-6701636_1920\ 1\ \(1\).png);
   background-image: cover;
@@ -331,13 +362,114 @@ background-position: center;
   width: 376px;
   text-align: center;
   align-content: center;
-  border: 1px solid black;
+  border: 1px dotted white;
   box-sizing: border-box;
-  font-size: 20px;
+  font-size: 25px;
   background;
   margin: 0;
   color: aliceblue;
 }
+
+
+.p_lntro2 > ul:hover {
+  background-color: rgba(138, 43, 226, 0.8); /* blueviolet 색상을 rgba로 변경 */
+  transition: background-color .5s; /* transition을 background-color에만 적용 */
+  font-size: 35px;
+  transition: font-size .5s
+}
+  
+
+.p_lntro2 > ul > li > p {
+  
+line-height: 40px;
+}
+
+.site {
+  background: url(./img/people-2561336_1280\ 1.png);
+  background-repeat: no-repeat;
+  background-image: cover;
+  background-position: center;
+  height: 700px;
+  margin-top: 200px;
+}
+
+.site > .product {
+  padding-top: 70px;
+  display: flex;
+  justify-content: center;
+} 
+
+
+.site > .product > div > p {
+  font-size: 30px;
+  color: blueviolet;
+  font-weight: bold;
+
+} 
+
+.site > .product > div > h1 {
+  font-size: 30px;
+  color: white;
+
+} 
+
+
+.site > .product > button {
+  background-color: transparent;
+  font-size: 20px;
+  border:1px solid white;
+  margin-top : 75px;
+  margin-left: 73px;
+  height: 40px;
+  text-align: center;
+  width: 90px;
+  cursor: pointer;
+  color:white;
+  text-shadow: -1px 0px black, 0px 1px black, 1px 0px black, 0px -1px black;} 
+
+.site > .product > button:hover {
+  border:3px, solid rgba(138, 43, 226, 0.8); /* blueviolet 색상을 rgba로 변경 */
+} 
+
+
+.site > div > .talent {
+  display: flex;
+  justify-content:space-evenly;
+  align-content: center;
+  margin-top: 10px;
+  text-align: center;
+}
+.site > div > .talent > .box > li > .fon2{
+  color: white;
+     
+   }
+ 
+
+
+.site > div > .talent > .box{
+  margin-top: 50px;
+  width: 207px;
+  height: 378px;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  align-content: center;
+  backdrop-filter: blur(30px);
+}
+
+.site > div > .talent > .box > .fon{
+color: blueviolet;
+font-size: 20px;
+
+  
+}
+
+
+
+
+
+
+
+
 
 
 
