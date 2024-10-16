@@ -419,7 +419,7 @@ line-height: 40px;
   font-size: 20px;
   border:1px solid white;
   margin-top : 75px;
-  margin-left: 73px;
+  margin-left: 100px;
   height: 40px;
   text-align: center;
   width: 90px;
@@ -434,45 +434,178 @@ line-height: 40px;
 
 .site > div > .talent {
   display: flex;
-  justify-content:space-evenly;
+  justify-content:center;
   align-content: center;
   margin-top: 10px;
   text-align: center;
+  gap: 50px;
 }
-.site > div > .talent > .box > li > .fon2{
-  color: white;
-     
-   }
- 
 
 
 .site > div > .talent > .box{
   margin-top: 50px;
-  width: 207px;
+  width: 220px;
   height: 378px;
   border: 1px solid transparent;
   border-radius: 50px;
   align-content: center;
   backdrop-filter: blur(30px);
+
 }
 
 .site > div > .talent > .box > .fon{
 color: blueviolet;
 font-size: 20px;
+}
 
+.site > div > .talent > .box > .fon2{
+  color: white;
+  font-size: 20px;
+  font-weight: lighter;
+  }
+
+.site > div > .talent > .box > p{
+  margin-top: 25px;
+  color: white;
+  }
   
+  .news {
+    display: flex;
+    justify-content: start;
+  }
+
+  .news > .newsint {
+    padding-top: 70px;
+    display: flex;
+    justify-content: center;
+    margin-left: 300px;
+  } 
+  
+  
+  .news > .newsint > div > p {
+    font-size: 30px;
+    color: blueviolet;
+    font-weight: bold;
+  
+  } 
+  
+  .news > .newsint > div > h1 {
+    font-size: 50px;
+    color: black;
+  
+  } 
+
+  .news > .newsint > button {
+    background-color: transparent;
+    font-size: 20px;
+    border:1px solid black;
+    margin-top: 35px;
+    margin-left: 600px;
+    height: 40px;
+    text-align: center;
+    width: 90px;
+    cursor: pointer;}
+
+
+
+    .news > .newsint > button:hover {
+      border:3px, solid rgba(138, 43, 226, 0.8); /* blueviolet 색상을 rgba로 변경 */
+    } 
+
+
+.listmain {justify-content: center;
+
+display: flex;
+width: 100%;
+height: 350px;
+margin-top: 100px;
+}
+
+.listmain > .newslist {
+  display: flex;
+  width: 100%;
+  gap: 100px;
+  justify-content: center;
+}
+
+.listmain > .newslist > :nth-child(2) {
+  height: 100%;
 }
 
 
+.listmain > .newslist > :nth-child(2) > h1 {
+  font-size : 30px;
+}
+
+.listmain > .newslist > :nth-child(2) > h2 {
+  font-size: 30px;
+  display: block;
+  margin-top: 60px;
+}
+
+.listmain > .newslist > :nth-child(3) {
+  font-size: 20px;
+  font-weight: bold;
+  line-height:50px;
+}
+
+.listmain2 {justify-content: center;
+  border-top: 1px solid black;
+  padding-top: 50px;
+  display: flex;
+  width: 100%;
+  height: 350px;
+  margin-top: 10px;
+  }
 
 
+.listmain2 > .newslist2 {
+  display: flex;
+  width: 100%;
+  gap:180px;
+  justify-content: center;
+}
+
+.listmain2 > .newslist2 > :nth-child(2) {
+  height: 100%;
+  gap: 40px;
+}
 
 
+.listmain2 > .newslist2 > :nth-child(2) > h1 {
+  font-size : 30px;
+}
 
+.listmain2 > .newslist2 > :nth-child(2) > h2 {
+  font-size: 30px;
+  display: block;
+  margin-top: 60px;
+}
 
+.listmain2 > .newslist2 > :nth-child(3) {
+  font-size: 20px;
+  font-weight: bold;
+  line-height:50px;
 
+}
+footer {
+  width: 100%;
+}
 
+.footer_menu {
+  display: flex;
+  align-content: space-between;
+  justify-content: center;
+}
 
+.footer_menu > .logo  > div > i{
+  width: 100px;
+  height:100px;
+}
 
+.footer_menu > .mode > ul {
+  display: flex;
+  align-content: space-around;
+  justify-content: center;
 
-
+}
