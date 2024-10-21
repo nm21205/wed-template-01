@@ -313,7 +313,7 @@ background-position: center;
   transition: background-color 0.4s; /* transition을 background-color에만 적용 */
 }
 
-  
+
 
 
 .container > .main >  .product{
@@ -364,9 +364,22 @@ background-position: center;
   background-repeat: no-repeat;
   background-size: 1128px;
   backdrop-filter: blur(15px);
+  position: relative;
+ 
 }
 
-
+.p_lntro2 > .overlay {
+position: absolute;
+left:0;
+top :0;
+width: 376px;
+height: 520px;
+pointer-events: none;
+background-color: rgba(94, 3, 112, 0.5);
+transition:all 0.5s;
+z-index: 1;
+opacity:0;
+}
 
 
 
@@ -379,15 +392,31 @@ background-position: center;
   font-size: 25px;
   margin: 0;
   color: aliceblue;
+  z-index: 1;
+  opacity: 1;
 }
 
 
 .p_lntro2 > ul:hover {
-  background-color: rgba(138, 43, 226, 0.8); /* blueviolet 색상을 rgba로 변경 */
-  transition: background-color .5s; /* transition을 background-color에만 적용 */
-  font-size: 35px;
-  transition: font-size .5s
+opacity: 1;
 }
+
+.p_lntro2 > ul > li:hover {
+  font-size: 2rem;
+  transition: 0.4s ease;
+  opacity: 1;
+  
+  }
+
+
+
+
+
+ 
+  /* background-color: rgba(138, 43, 226, 0.8); /* blueviolet 색상을 rgba로 변경 */
+  /* transition: background-color .5s; transition을 background-color에만 적용
+  font-size: 35px;
+  transition: font-size .5s; */ 
   
 
 .p_lntro2 > ul > li > p {
@@ -450,7 +479,11 @@ line-height: 40px;
   margin-top: 10px;
   text-align: center;
   gap: 50px;
+  position: relative;
 }
+
+
+
 
 
 .site > div > .talent > .box{
@@ -661,4 +694,8 @@ footer > .last > .person > li
 
 footer > .last > .person > .smail:nth-child(1)
 { font-size: 1px;
+}
+
+@keyframes scale {
+  50% { scale: 1.2; }
 }

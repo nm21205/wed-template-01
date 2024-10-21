@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>휴가 관리 시스템</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./js/script.js"></script>
+</head>
+<body>
+    <h1>휴가 관리 시스템</h1>
+    <div class="input-form">
+        <label for="name">이름:</label>
+        <input type="text" id="name" placeholder="예: 이김영">
+        
+        <label for="start-date">휴가 시작일:</label>
+        <input type="date" id="start-date">
+        
+        <label for="end-date">휴가 종료일:</label>
+        <input type="date" id="end-date">
+        
+        <!-- 휴가 유형 선택 -->
+        <label><input type="radio" name="leave-type" value="연가" checked> 연가</label>
+        <label><input type="radio" name="leave-type" value="포상휴가"> 포상휴가</label>
+
+        <button id="add-leave-btn">휴가 추가</button>
+    </div>
+    
+    <div class="calendar">
+        <h2>휴가 달력</h2>
+        <div id="calendar-display"></div>
+    </div>
+  
+    <table border="1" id="vacation-table">
+        <thead>
+            <tr id="date-header">
+                <th>이름</th> <!-- 사용자 이름이 들어갈 첫 번째 열 -->
+                <!-- 31일에 해당하는 날짜를 여기에 동적으로 추가 -->
+            </tr>
+        </thead>
+        <tbody id="vacation-body">
+            <!-- 각 사용자의 휴가 정보가 여기에 동적으로 추가됨 -->
+        </tbody>
+        <tfoot>
+            <tr id="total-row">
+                <td>총합</td>
+                <!-- 총 휴가자 수가 동적으로 여기에 추가됨 -->
+            </tr>
+        </tfoot>
+    </table>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const totalHolidays = Array(31).fill(0); // 각 날짜별 총 휴가자 수
+
+            // 페이지 로드 시 날짜 헤더 자동 생성
+            window.onload = function() {
+                const dateHeader = document.getElementById('date-header');
+                const totalRow = document.getElementById('total-row');
+
+                // 1일부터 31일까지 날짜 헤더 추가
+                for (let i = 1; i <= 31; i++) {
+                    dateHeader.innerHTML += `<th>${i}일</th>`;
+                    totalRow.innerHTML += `<td id="total-${i}">0</td>`;
+                }
+            }
+
+            function addLeave() {
+                const name = document.getElementById('name').value;
+                const startDate = new Date(document.getElementById('start-date').value);
+                const endDate = new Date(document.getElementById('end-date').value);
+                const leaveType = document.querySelector('input[name="leave-type"]:checked').value; // 연가 or 포상휴가 선택
+
+                if (!name || isNaN(startDate.getTime()) || isNaN(endDate.getTime()) || startDate > endDate) {
+                    alert("유효한 이름과 날짜를 입력해주세요.");
+                    return;
+                }
+
+                // 새로운 사용자 행 생성
+                const vacationBody = document.getElementById('vacation-body');
+                let existingRow = document.getElementById(`row-${name}`);
+
+                if (!existingRow) {
+                    existingRow = document.createElement('tr');
+                    existingRow.id = `row-${name}`;
+                    existingRow.innerHTML = `<td>${name}</td>`;
+                    for (let i = 1; i <= 31; i++) {
+                        existingRow.innerHTML += `<td id="day-${name}-${i}"></td>`;
+                    }
+                    vacationBody.appendChild(existingRow);
+                }
+
+                // 각 날짜 칸을 추가하며 휴가에 해당하는 날짜에 "연가" 또는 "포상" 표시
+                for (let i = 1; i <= 31; i++) {
+                    const currentDate = new Date(startDate.getFullYear(), startDate.getMonth(), i);
+
+                    if (currentDate >= startDate && currentDate <= endDate) {
+                        const dayCell = document.getElementById(`day-${name}-${i}`);
+                        dayCell.innerText = leaveType === '연가' ? '연가' : '포상휴가';
+                        dayCell.style.backgroundColor = leaveType === '연가' ? '#FFD700' : '#87CEFA'; // 연가는 금색, 포상휴가는 파란색 배경
+                        
+                        // 총합에 1 추가
+                        totalHolidays[i - 1] += 1; 
+                        document.getElementById(`total-${i}`).innerText = totalHolidays[i - 1]; // 총합 업데이트
+                    }
+                }
+            }
+
+            // 휴가 추가 버튼 이벤트 리스너 등록
+            document.getElementById('add-leave-btn').addEventListener('click', addLeave);
+        });
+    </script>
+</body>
+</html>

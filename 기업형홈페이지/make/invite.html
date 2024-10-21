@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>초대 링크 입력</title>
+</head>
+<body>
+    <h1>초대 링크 입력</h1>
+    <form id="invite-form">
+        <label for="invite-code">초대 링크 입력:</label>
+        <input type="text" id="invite-code" placeholder="초대 코드를 입력하세요" required><br>
+        
+        <button type="submit">제출</button>
+    </form>
+
+    <p id="approval-message" style="display: none;">관리자의 승인을 기다리는 중입니다...</p>
+
+    <script>
+        document.getElementById('invite-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const inviteCode = document.getElementById('invite-code').value;
+
+            // 간단한 초대 링크 검증 로직
+            if (inviteCode === 'GROUP123') { // 예시 코드
+                document.getElementById('approval-message').style.display = 'block';
+
+                // 일정 시간 후 승인이 되었다고 가정하고 페이지 이동
+                setTimeout(function() {
+                    alert('관리자 승인 완료!');
+                    window.location.href = 'calendar.html'; // 달력 페이지로 이동
+                }, 3000); // 3초 후 승인
+            } else {
+                alert('초대 링크가 잘못되었습니다.');
+            }
+        });
+    </script>
+</body>
+</html>

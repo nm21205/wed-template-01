@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <link href="js/login.js">
+  <link rel="stylesheet" href="css/login.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로그인 체크</title>
+  </head>
+  <body>
+    <div>
+    <h2>그래서 지금 몇명이야?</h2>
+    <br>
+    <h1>로그인</h1>
+    <form id="loginForm">
+      <label class="username" for="username">Username:</label>
+      <input class="name" type="text" id="username" name="username" required />
+      <br />
+      <label for="password">Password:</label>
+      <input class="password" type="password" id="password" name="password" required />
+      <br/>
+      <!--버튼을 클릭하면 checkLogin 함수가 호출-->
+      <button type="button" onclick="checkLogin()">Login</button>
+      <button type="button" onclick="checkjoin()">회원가입</button>
+    </form>
+    <p id="message"></p>
+  </div>
+  
+  </body>
+</html>
