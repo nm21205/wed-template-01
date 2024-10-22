@@ -1,0 +1,93 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.re {
+  width: 1920px;
+  height: 1400px;
+
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background-color: black;
+  display: flex;
+  color: white;
+  justify-content: space-between; 
+  font-size: 30px;
+  z-index: 999;
+  transition:top .3s;
+}
+
+.menu > .bn1, .bn2, .bn3, .bn4 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap:40px;
+}
+
+
+
+.menu-icon{
+  width: 30px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.menu-icon > span {
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: white;
+  transition: all 0.3s ease; /* 부드러운 전환 효과 */
+
+
+}
+
+.menu-icon.active span:nth-child(1)
+{
+  transform:rotate(45deg);
+  position: relative;
+  
+}
+
+.menu-icon.active span:nth-child(2)
+{
+  transform:rotate(-45deg);
+  position: relative;
+  top:-15px;
+}
+
+.hide {
+  z-index: 40;
+  position: relative;
+  top:150px;
+  background-color: black;
+  color: white;
+  display: flex;
+  gap : 200px;
+  border-top:1px solid white ;
+  font-size: 20px;
+}
+
+.hide ul:nth-child(1){
+margin-left: 200px;
+  
+}
