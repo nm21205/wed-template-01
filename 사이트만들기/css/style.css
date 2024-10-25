@@ -161,17 +161,18 @@ padding:20px;
 
 
 .second_page {
-  position:absolute;
+  position:static;
   background-color: black;
   color: white;
   width: 100%;
-  height: 100%;
+  height: 900px;
 }
 
 .second_page > .titles {
 margin-left: 40px;
 margin-top: 70px;
 margin-bottom: 70px;
+height: 100%;
 }
 
 .second_page > .titles > h1{
@@ -266,6 +267,42 @@ margin-bottom: 70px;
     scale: 1.1;
   }
 
+  .third_page {height: 100%;
+background-color: #000;
+color: white;
+position: relative;
+z-index: 9;
+width: 100%;
+  }
+
+  .third_page > .num_log {
+    width: 100%;
+    height:150px;
+    margin-left: 35px;
+  }
+
+  .third_page > section {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+
+  }
+
+  
+  .third_page > section  > .numbers > .num {
+    display: flex;
+  }
+
+  .third_page > section  > .numbers > .num {
+    display: flex;
+  }
+
+  .third_page > section  > .numbers {
+    border-left: 1p solid white;
+    border-right: 1px solid white;
+  }
+
+ 
 
 
   /*미디어 쿼리부분*/

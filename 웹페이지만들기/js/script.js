@@ -165,6 +165,7 @@ easing: 'ease',
 fill : 'forwards'
   }
 );
+//부드럽게 한번 표시되었다면 관찰 중지
 obs.unobserve(entry.target)
   }
  })

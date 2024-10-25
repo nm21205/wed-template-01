@@ -62,7 +62,7 @@ addEventListener('load', function() {
   });
   
   //왼쪽 화살표 버튼 클릭시
-  document.querySelector('.left-btn').addEventListener('click',(e)=>{
+  document.querySelector('.right-btn').addEventListener('click',(e)=>{
     e.preventDefault();
     //카운트를 가장 가까운 40의 배수로 반올림한 후 40일 더하고 업데이트로테이션함수를 호출하여 회전을 업데이트 합니다?
     count = Math.round(count /40) * 40 + 40;
@@ -70,7 +70,7 @@ addEventListener('load', function() {
   })
   
   //오른쪽 화살표 버튼 클릭시
-  document.querySelector('.right-btn').addEventListener('click',(e)=>{
+  document.querySelector('.left-btn').addEventListener('click',(e)=>{
     e.preventDefault();
     //카운트를 가장 가까운 40의 배수로 반올림한 후 40을 빼고 업데이트로테이션함수를 호출하여 회전을 업데이트 합니다?
     count = Math.round(count /40) * 40 - 40;
@@ -78,6 +78,10 @@ addEventListener('load', function() {
   })
   
   
+  
+
+
+
   
   
 });
