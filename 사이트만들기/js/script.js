@@ -85,3 +85,18 @@ addEventListener('load', function() {
   
   
 });
+
+
+const count1 = document.getElementById("count1"); // 대상 섹션의 ID
+
+window.onscroll = function () {
+  const sectionTop = count1.offsetTop;
+  const sectionHeight = count1.offsetHeight;
+
+  const scrollPosition = window.scrollY + window.innerHeight;
+
+  if (scrollPosition >= sectionTop && scrollPosition <= sectionTop + sectionHeight) {
+    console.log("섹션에 도달했습니다!");
+    // 여기서 원하는 동작 추가
+  }
+};
