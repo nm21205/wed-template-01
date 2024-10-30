@@ -378,8 +378,8 @@ height: 400px;
   border-radius: 20px;
   background-color: white;
   position: absolute;
-  top: 500px
-
+  top: 500px;
+  display:none;
 
 
 }
@@ -396,7 +396,8 @@ height: 400px;
   top:100px;
   z-index: 200;
   top:780px;
-  box-shadow: 0px -10px 30px rgb(66, 66, 66)
+  box-shadow: 0px -10px 30px rgb(66, 66, 66);
+  display:none;
 
 }
 
@@ -411,9 +412,14 @@ height: 400px;
   position: absolute;
   z-index: 400;
   top: 1070px;
- box-shadow: 0px -10px 30px rgb(66, 66, 66)
+ box-shadow: 0px -10px 30px rgb(66, 66, 66);
+ display:none;
 }
 
+.active1 {
+  display: block;
+  transition: 1s;
+}
 
 .four_page > .canvas {
   height: 300px;

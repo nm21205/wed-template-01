@@ -1,4 +1,4 @@
-addEventListener('load', function() {
+addEventListener("DOMContentLoaded", function() {
   const menuIcon = document.querySelector('.menu-icon');
   const hide = document.querySelector('.hide');
   const start = this.document.querySelector('.start')
@@ -90,14 +90,18 @@ addEventListener('load', function() {
 const count1 = document.getElementById("count1"); // 대상 섹션의 ID
 
 window.onscroll = function () {
-  const sectionTop = count1.offsetTop;
-  const sectionHeight = count1.offsetHeight;
+  if (count1) { // count1 요소가 존재할 때만 offsetTop과 offsetHeight을 사용
+    const sectionTop = count1.offsetTop;
+    const sectionHeight = count1.offsetHeight;
 
-  const scrollPosition = window.scrollY + window.innerHeight;
+    const scrollPosition = window.scrollY + window.innerHeight;
 
-  if (scrollPosition >= sectionTop && scrollPosition <= sectionTop + sectionHeight) {
-    console.log("섹션에 도달했습니다!");
-    // 여기서 원하는 동작 추가
+    if (scrollPosition >= sectionTop && scrollPosition <= sectionTop + sectionHeight) {
+      console.log("섹션에 도달했습니다!");
+      // 여기서 원하는 동작 추가
+    }
+  } else {
+    console.log("섹션에도달했습니다.");
   }
 };
 
@@ -235,3 +239,21 @@ addEventListener('DOMContentLoaded', () => {
   });
 });
 
+
+
+let tl = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".four_page > .canvas1",
+    pin: true,
+    start: "bottom bottom",
+    end: "+=1000",
+    scrub: 1,
+    markers: true, // 스크롤 트리거 위치를 시각적으로 확인
+    onEnter: () => {
+      gsap.to(".four_page > .canvas1", { className: "+=active1" });
+    },
+    onLeave: () => {
+      gsap.to(".four_page > .canvas1", { className: "-=active1" });
+    }
+  }
+});
