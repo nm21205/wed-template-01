@@ -241,19 +241,15 @@ addEventListener('DOMContentLoaded', () => {
 
 
 
-let tl = gsap.timeline({
+
+
+gsap.to(".canvas1", {
   scrollTrigger: {
-    trigger: ".four_page > .canvas1",
-    pin: true,
-    start: "bottom bottom",
-    end: "+=1000",
+    trigger: ".canvas1", // 요소가 뷰포트에 드러나는 순간부터 애니메이션이 작동
+    start: "bottom bottom", // 애니메이션 시작시점
+    end:"top top", // 애니메이션 종료시점
     scrub: 1,
-    markers: true, // 스크롤 트리거 위치를 시각적으로 확인
-    onEnter: () => {
-      gsap.to(".four_page > .canvas1", { className: "+=active1" });
-    },
-    onLeave: () => {
-      gsap.to(".four_page > .canvas1", { className: "-=active1" });
-    }
-  }
+    markers: true // 트리거 마커의 표시(boolean)
+  },
+  opacity:1;
 });
