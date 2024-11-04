@@ -245,11 +245,38 @@ addEventListener('DOMContentLoaded', () => {
 
 gsap.to(".canvas1", {
   scrollTrigger: {
-    trigger: ".canvas1", // 요소가 뷰포트에 드러나는 순간부터 애니메이션이 작동
-    start: "bottom bottom", // 애니메이션 시작시점
-    end:"top top", // 애니메이션 종료시점
+    trigger: ".canvas1", 
+    start: "bottom bottom", 
+    end: "top top",
     scrub: 1,
-    markers: true // 트리거 마커의 표시(boolean)
+    markers: true
   },
-  opacity:1;
+  y: -10, // Y축으로 10px 위로 이동
+  opacity: 1, // opacity 1로 변경
+  duration: 0.5 // 애니메이션의 지속 시간 1초
+});
+
+gsap.to(".canvas2", {
+  scrollTrigger: {
+    trigger: ".canvas2", 
+    start: "bottom bottom", 
+    end: "top top",
+    scrub: 1,
+    markers: true
+  },
+  y: -10, // Y축으로 10px 위로 이동
+  opacity: 1, // opacity 1로 변경
+  duration: 0.5 // 애니메이션의 지속 시간 1초
+});
+gsap.to(".canvas3", {
+  scrollTrigger: {
+    trigger: ".canvas3", 
+    start: "bottom bottom", 
+    end: "top top",
+    scrub: 1,
+    markers: true
+  },
+  y: -10, // Y축으로 10px 위로 이동
+  opacity: 1, // opacity 1로 변경
+  duration: 0.5 // 애니메이션의 지속 시간 1초
 });

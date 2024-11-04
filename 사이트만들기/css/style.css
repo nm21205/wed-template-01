@@ -24,6 +24,7 @@ a {
 }
 body {
   background-color: #000;
+  width: 1920px;
 }
 
 .menu {
@@ -41,6 +42,9 @@ body {
   transition: top 0.3s;
 }
 
+body{
+  width: 100%;
+}
 .menu > .bn1,
 .bn2,
 .bn3,
@@ -356,23 +360,26 @@ height: 400px;
   color: white;
   height: 300px;
   position: relative;
+  margin-left: -40px;
+
 }
 
 .four_page > div:nth-child(1) {
   font-size: 20px;
+  margin-left: 30px;
 }
 
 .four_page > div:nth-child(2) {
   font-size: 50px;
   font-weight: bold;
   margin-top: 250px;
-  margin-left: 60px;
+  margin-left: 100px;
 }
 
 .four_page > .canvas1 {
-  width: 100%;
+  width: 1800px;
   height: 200px;
-  margin-left: 40px;
+  margin-left: 90px;
   margin-right: 40px;
   border: 1px solid white;
   border-radius: 20px;
@@ -380,34 +387,39 @@ height: 400px;
   position: absolute;
   top: 500px;
   opacity: 0;
- 
-
-  
 
 
 }
 
-.four_page > .canvas2 {
-  width: 100%;
-  height: 200px;
+.four_page > div > h2 {
   margin-left: 40px;
+}
+
+
+
+
+.four_page > .canvas2 {
+  width: 1800px;
+    height: 200px;
+    margin-left: 90px;
   margin-right: 40px;
   border: 1px solid rgb(255, 255, 255);
   border-radius: 20px;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   position: absolute;
   top:100px;
   z-index: 200;
   top:780px;
   box-shadow: 0px -10px 30px rgb(66, 66, 66);
+  opacity: 0;
 
 
 }
 
 .four_page > .canvas3 {
-  width: 100%;
-  height: 200px;
-  margin-left: 40px;
+  width: 1800px;
+    height: 200px;
+  margin-left: 90px;
   margin-right: 40px;
   border: 1px solid rgb(255, 255, 255);
   border-radius: 20px;
@@ -416,6 +428,7 @@ height: 400px;
   z-index: 400;
   top: 1070px;
  box-shadow: 0px -10px 30px rgb(66, 66, 66);
+ opacity: 0;
 
 }
 
@@ -444,9 +457,123 @@ align-items: center;
 
 
 
+.five_page{
+  background-color: white;
+  width: 1920px;
+  height: 700px;
+  position: relative;
+  top: 700px;
+  z-index: 40;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  vertical-align: middle;
+
+}
+
+.five_page > div {
+  display: flex;
+  justify-content: center;
+}
+
+
+.five_page > div > .part {
+  position: absolute;
+  top: 500px;
+  width: 700px;
+  color: white;
+  background-color:black;
+  border-radius: 20px;
+  font-size: 30px;
+  height: 100px;
+  margin: 0;
+  text-align: center;
+  justify-content: center;
+  align-items:center;
+  display: flex;
+}
+
 
 
 
   /*미디어 쿼리부분*/
 
+
+.six_page {
+  position: relative;
+  height: 400px;
+  width: 1920px;
+  z-index: 910;  
+  top: 900px
+}
+
+.six {
+  display: flex;
+  color:white;
+
+
+}
+.si_one{
+  margin-left: 70px;
+}
+
+
+
+.si_one > h1 {
+  font-size: 80px;
+  opacity: 0.5;
+}
+
+.si_one > img {
+  width: 960px;
+  height: 900px;;
+
+}
+
+.si_one > p {
+  font-size: 20px;
+}
  
+.si_two{
+  margin-right: 270px;
+}
+
+.si_two > img {
+  width: 790px;
+  height: 900px;;
+}
+
+
+.seven_page {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 900;
+  top: 1800px;
+  height: 500px;
+  color: white;
+}
+
+
+.seven_page {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 900;
+  top: 1800px;
+  height: 500px;
+  color: white;
+  outline: 1px solid red;
+  width: 1920px;
+}
+
+
+.se_one {
+  width: 900px;
+  outline: 1px solid red;
+}
+
+.se_two {
+  width: 900px;
+  outline: 1px solid red;
+}
